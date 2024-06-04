@@ -15,14 +15,14 @@ const FormField = ({
       <div className="flex items-center gap-2 mb-2">
         <label
           htmlFor={name}
-          className="block text-sm font-medium text-gray-900"
+          className="block text-ls font-bold text-gray-900 "
         >
           {LabelName}
         </label>
         {isSupriseMe && (
           <button
             onClick={handleSupriseMe}
-            className="text-[#2f80ed] text-sm font-medium"
+            className="text-[#2f80ed] text-sm font-medium m"
           >
             Surprise Me
           </button>
