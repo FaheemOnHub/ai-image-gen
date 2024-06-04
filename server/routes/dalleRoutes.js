@@ -5,7 +5,7 @@ import fetch from "node-fetch";
 dotenv.config();
 console.log(process.env.OPENAI_API_KEY);
 const router = express.Router();
-const url = "https://dalle.feiyuyu.net/v1/images/generations";
+const url = process.env.PROXY_URL;
 const apiKey = process.env.OPENAI_API_KEY; // Replace with your actual API key
 
 router.route("/").post(async (req, res) => {
